@@ -14,7 +14,7 @@ const ExperienceTopRight = () => {
         </span>
         , with hands-on experience integrating{" "}
         <span className="font-bold text-white">
-          OpenAI, Groq and LangChain
+          OpenAI and Groq
         </span>{" "}
         into production products.
       </p>
