@@ -8,21 +8,21 @@ const projects = [
     name: "Strategy Navigator — AI SaaS Platform",
     year: "2025",
     align: "right",
-    image: "/images/website-img-1.jpg",
+    image: "/images/strategy-navigator.png",
     liveDemo: "https://strategynavigator.ai/",
   },
   {
-    name: "JourneyAI — AI Assistant Platform",
+    name: "JourneyAI — AI Sales Assistant Platform",
     year: "2025",
     align: "left",
-    image: "/images/website-img-3.jpg",
+    image: "/images/journeyai.png",
     liveDemo: "https://meetjourney.ai/",
   },
   {
     name: "SaleSide AI — Sales Meeting Assistant",
     year: "2025",
     align: "right",
-    image: "/images/website-img-4.jpg",
+    image: "/images/saleside.png",
     liveDemo: "https://saleside.ai/",
   },
   {
@@ -39,20 +39,6 @@ const projects = [
     image: "/images/dash.PNG",
     liveDemo: "https://dashboard-rho-gray-61.vercel.app/dashboard",
     github: "https://github.com/aymenkhaled/dashboard",
-  },
-  {
-    name: "MERN Blog App",
-    year: "2023",
-    align: "left",
-    image: "/images/blog.jpg",
-    github: "https://github.com/aymenkhaled/mern-blog-app",
-  },
-  {
-    name: "MERN E-commerce",
-    year: "2022",
-    align: "right",
-    image: "/images/ecom2.jpg",
-    github: "https://github.com/aymenkhaled/mern-e-commerce",
   },
 ];
 
