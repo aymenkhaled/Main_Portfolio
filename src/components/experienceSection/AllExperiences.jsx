@@ -5,33 +5,42 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const experiences = [
   {
-    job: "Full Stack Web Developer Intern",
+    job: "Full Stack Web Developer",
+    company: "Everything to Gain",
+    date: "Feb 2025 – Present",
+    responsibilities: [
+      "Led development of multiple SaaS & AI tools (Strategy Navigator, JourneyAI, SaleSide AI).",
+      "Built multi-tenant platform with RBAC, integrated 65+ AI tools (GPT-4o, Groq Llama) and billing (Stripe/PayPal).",
+      "Developed Slack, Asana & Basecamp integrations and real-time WebSocket features.",
+    ],
+  },
+  {
+    job: "Full Stack Developer (Intern)",
     company: "Aziin Engineering Solution",
-    date: "Feb 2025 - May 2025",
+    date: "2024",
     responsibilities: [
-      "Developed full-stack web applications using the MERN stack.",
+      "Developed e-learning platform with AI chatbot and real-time WebSockets.",
+      "Built MERN backend for dynamic content, authentication and performance optimization.",
       "Integrated AI features to enhance platform intelligence.",
-      "Collaborated on real-time data processing and APIs.",
-     
     ],
   },
   {
-    job: "Full Stack Developer Intern",
+    job: "Mobile Developer (Intern)",
     company: "SAC Marquage",
-    date: "Sep 2024 - Oct 2024",
+    date: "Sep 2024 – Oct 2024",
     responsibilities: [
-      "Built RFID data management solutions with React and Django.",
-      "Designed and developed RESTful APIs for real-time data handling.",
-      "Worked on frontend-backend integration and UI improvements.",
+      "Built React Native RFID mobile app with IoT device communication.",
+      "Created Django REST APIs for tag management and device synchronization.",
+      "Designed RESTful APIs for real-time data handling.",
     ],
   },
   {
-    job: "Full Stack Web Developer Intern",
+    job: "Full Stack Web Developer (Intern)",
     company: "Proged",
-    date: "Jul 2022 - Aug 2022",
+    date: "Jul 2022 – Aug 2022",
     responsibilities: [
-      "Created e-commerce applications with .NET Core and React.",
-      "Managed SQL Server and MongoDB databases.",
+      "Developed e-commerce system with .NET, React, SQL Server and MongoDB.",
+      "Implemented payments, product catalog and order workflows.",
       "Participated in deployment and maintenance of web apps.",
     ],
   },
@@ -39,11 +48,11 @@ const experiences = [
 
 const AllExperiences = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col items-center justify-between">
+    <div className="flex md:flex-row sm:flex-col flex-wrap items-start justify-center gap-6">
       {experiences.map((experience, index) => {
         return (
-          <>
-            <SingleExperience key={index} experience={experience} />
+          <div key={index} className="flex flex-col md:flex-row items-center gap-6">
+            <SingleExperience experience={experience} />
             {index < experiences.length - 1 ? (
               <motion.div
                 variants={fadeIn("right", 0)}
@@ -51,10 +60,10 @@ const AllExperiences = () => {
                 whileInView="show"
                 viewport={{ once: false, amount: 0.7 }}
               >
-                <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
+                <FaArrowRightLong className="text-4xl text-orange lg:block sm:hidden rotate-90 md:rotate-0" />
               </motion.div>
             ) : null}
-          </>
+          </div>
         );
       })}
     </div>

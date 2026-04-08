@@ -5,12 +5,25 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "E-commerce Dashboard",
-    year: "2023",
+    name: "Strategy Navigator — AI SaaS Platform",
+    year: "2025",
     align: "right",
-    image: "/images/dash.PNG",
-    liveDemo: "https://dashboard-rho-gray-61.vercel.app/dashboard",
-    github: "https://github.com/aymenkhaled/dashboard",
+    image: "/images/website-img-1.jpg",
+    liveDemo: "https://strategynavigator.ai/",
+  },
+  {
+    name: "JourneyAI — AI Assistant Platform",
+    year: "2025",
+    align: "left",
+    image: "/images/website-img-3.jpg",
+    liveDemo: "https://meetjourney.ai/",
+  },
+  {
+    name: "SaleSide AI — Sales Meeting Assistant",
+    year: "2025",
+    align: "right",
+    image: "/images/website-img-4.jpg",
+    liveDemo: "https://saleside.ai/",
   },
   {
     name: "LMS with AI Integration & WebSocket",
@@ -20,11 +33,12 @@ const projects = [
     liveDemo: "https://e-learning-five-tau.vercel.app",
   },
   {
-    name: "MERN Redux Toolkit E-commerce",
+    name: "E-commerce Dashboard",
     year: "2023",
     align: "right",
-    image: "/images/ecom 1.webp",
-    github: "https://github.com/aymenkhaled/mern-redux-toolkit-ecommerce",
+    image: "/images/dash.PNG",
+    liveDemo: "https://dashboard-rho-gray-61.vercel.app/dashboard",
+    github: "https://github.com/aymenkhaled/dashboard",
   },
   {
     name: "MERN Blog App",
@@ -39,13 +53,6 @@ const projects = [
     align: "right",
     image: "/images/ecom2.jpg",
     github: "https://github.com/aymenkhaled/mern-e-commerce",
-  },
-  {
-    name: "MERN E-Book",
-    year: "2023",
-    align: "left",
-    image: "/images/website-img-2.webp",
-    github: "https://github.com/aymenkhaled/mern-e-book",
   },
 ];
 
