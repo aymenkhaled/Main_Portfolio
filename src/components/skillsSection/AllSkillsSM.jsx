@@ -1,52 +1,41 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaReact, FaPython, FaDocker, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
+import {
+  SiNodedotjs,
+  SiTypescript,
+  SiNextdotjs,
+  SiMongodb,
+  SiPostgresql,
+  SiOpenai,
+  SiFastapi,
+  SiDjango,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
-  {
-    skill: "HTML",
-    icon: FaHtml5,
-  },
-  {
-    skill: "CSS",
-    icon: FaCss3Alt,
-  },
-  {
-    skill: "JavaScript",
-    icon: IoLogoJavascript,
-  },
-  {
-    skill: "TypeScript",
-    icon: SiTypescript,
-  },
-  {
-    skill: "ReactJS",
-    icon: FaReact,
-  },
-  {
-    skill: "Redux",
-    icon: SiRedux,
-  },
-  {
-    skill: "NextJS",
-    icon: SiNextdotjs,
-  },
-  {
-    skill: "TailwindCSS",
-    icon: RiTailwindCssFill,
-  },
+  { skill: "JavaScript", icon: IoLogoJavascript },
+  { skill: "TypeScript", icon: SiTypescript },
+  { skill: "ReactJS", icon: FaReact },
+  { skill: "React Native", icon: TbBrandReactNative },
+  { skill: "NextJS", icon: SiNextdotjs },
+  { skill: "TailwindCSS", icon: RiTailwindCssFill },
+  { skill: "NodeJS", icon: SiNodedotjs },
+  { skill: "Python", icon: FaPython },
+  { skill: "FastAPI", icon: SiFastapi },
+  { skill: "Django", icon: SiDjango },
+  { skill: "MongoDB", icon: SiMongodb },
+  { skill: "PostgreSQL", icon: SiPostgresql },
+  { skill: "OpenAI", icon: SiOpenai },
+  { skill: "Docker", icon: FaDocker },
+  { skill: "Git", icon: FaGitAlt },
 ];
 
 const AllSkillsSM = () => {
   return (
-    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
+    <div className="grid md:grid-cols-4 sm:grid-cols-3 gap-8 my-12">
       {skills.map((item, index) => {
         return (
           <motion.div

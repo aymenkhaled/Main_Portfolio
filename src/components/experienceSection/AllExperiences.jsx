@@ -1,5 +1,4 @@
 import SingleExperience from "./SingleExperience";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
@@ -9,8 +8,8 @@ const experiences = [
     company: "Everything to Gain",
     date: "Feb 2025 – Present",
     responsibilities: [
-      "Led development of multiple SaaS & AI tools (Strategy Navigator, JourneyAI, SaleSide AI).",
-      "Built multi-tenant platform with RBAC, integrated 65+ AI tools (GPT-4o, Groq Llama) and billing (Stripe/PayPal).",
+      "Led development of Strategy Navigator, JourneyAI and SaleSide AI — all live SaaS products.",
+      "Built multi-tenant RBAC platform; integrated 65+ AI tools (GPT-4o, Groq Llama) with Stripe/PayPal billing.",
       "Developed Slack, Asana & Basecamp integrations and real-time WebSocket features.",
     ],
   },
@@ -48,24 +47,18 @@ const experiences = [
 
 const AllExperiences = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col flex-wrap items-start justify-center gap-6">
-      {experiences.map((experience, index) => {
-        return (
-          <div key={index} className="flex flex-col md:flex-row items-center gap-6">
-            <SingleExperience experience={experience} />
-            {index < experiences.length - 1 ? (
-              <motion.div
-                variants={fadeIn("right", 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <FaArrowRightLong className="text-4xl text-orange lg:block sm:hidden rotate-90 md:rotate-0" />
-              </motion.div>
-            ) : null}
-          </div>
-        );
-      })}
+    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-8 mt-4">
+      {experiences.map((experience, index) => (
+        <motion.div
+          key={index}
+          variants={fadeIn("up", `0.${index}`)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <SingleExperience experience={experience} />
+        </motion.div>
+      ))}
     </div>
   );
 };

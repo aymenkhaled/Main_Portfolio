@@ -4,12 +4,19 @@ const ExperienceTopRight = () => {
       <p className="text-lg text-center text-lightGrey">
         I specialize in{" "}
         <span className="font-bold text-white">
-          the MERN stack and Next.js
+          SaaS architecture and AI integrations
         </span>
-        , applying best practices to build scalable and maintainable full-stack applications. <br />
-        My experience includes working on advanced projects involving{" "}
-        <span className="font-bold text-white">AI-driven features</span>,{" "}
-        <span className="font-bold text-white">real-time data processing</span>, and seamless frontend-backend integration. I’m committed to writing clean code and delivering smooth, user-friendly experiences.
+        , building multi-tenant platforms with RBAC, real-time WebSockets and
+        billing systems. <br />
+        My stack spans{" "}
+        <span className="font-bold text-white">
+          React, Node.js, FastAPI and Python
+        </span>
+        , with hands-on experience integrating{" "}
+        <span className="font-bold text-white">
+          OpenAI, Groq and LangChain
+        </span>{" "}
+        into production products.
       </p>
     </div>
   );

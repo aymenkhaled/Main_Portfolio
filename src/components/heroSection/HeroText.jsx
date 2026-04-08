@@ -9,9 +9,9 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
+        className="lg:text-2xl sm:text-xl uppercase text-lightGrey"
       >
-        Full Stack Web Developer  
+        Full Stack Developer · SaaS & AI
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -30,7 +30,8 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4"
       >
-        A Passionate Web Developer  <br /> Specialized in the MERN stack 
+        Building production SaaS platforms & AI-powered products <br />
+        with React, Node.js, Python and OpenAI integrations
       </motion.p>
     </div>
   );
