@@ -1,5 +1,5 @@
 import SingleSkill from "./SingleSkill";
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaDocker, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaPython, FaDocker, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
   SiNodedotjs,
