@@ -1,8 +1,56 @@
-# React + Vite
+# Aymen Khaled — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio presenting my software engineering background, technical skills, experience, and selected projects.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This single-page React site includes sections for an introduction, technical skills, experience, projects, and contact information. It is a portfolio application, not a reusable Vite starter template.
+
+## Tech stack
+
+- React and Vite
+- Tailwind CSS
+- Framer Motion
+- Redux Toolkit
+- EmailJS for the contact experience
+
+## Run locally
+
+**Requirements:** Node.js and npm.
+
+```bash
+npm install
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+Run the configured lint checks:
+
+```bash
+npm run lint
+```
+
+## Configuration
+
+The contact form uses EmailJS. Set the values expected by the code in your local environment; do not commit service keys or personal credentials. For a Vite app, browser-exposed environment variables are not secrets.
+
+## Repository structure
+
+- `src/components/` — portfolio sections and UI components
+- `src/assets/` — application assets
+- `src/state/` — shared application state
+- `public/` — static assets
+
+## Maintaining the portfolio
+
+Keep project links, work history, downloadable CV, and contact information current. Before deploying, run lint and build and check the site on mobile and desktop.
+
+## Status
+
+Personal portfolio. Review public content and outbound links before using it for job applications.
